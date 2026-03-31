@@ -1,0 +1,4 @@
+node_modules/
+*.vsix
+# dist is committed — required for Azure DevOps Marketplace packaging
+

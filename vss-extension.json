@@ -1,0 +1,43 @@
+{
+  "manifestVersion": 1,
+  "id": "fixsense",
+  "publisher": "fixsense",
+  "version": "0.1.0",
+  "name": "FixSense — AI Test Failure Analysis",
+  "description": "AI-powered root cause analysis and auto-fix for failing CI tests. Supports Playwright, Cypress, Jest, NUnit, xUnit, and any JUnit XML/TRX reporter.",
+  "public": false,
+  "categories": ["Azure Pipelines"],
+  "tags": ["testing", "ai", "auto-fix", "playwright", "cypress", "nunit", "xunit", "junit"],
+  "targets": [
+    { "id": "Microsoft.VisualStudio.Services" }
+  ],
+  "icons": {
+    "default": "images/icon.png"
+  },
+  "content": {
+    "details": { "path": "overview.md" }
+  },
+  "links": {
+    "home": { "uri": "https://fix-sense.vercel.app" },
+    "repository": { "uri": "https://github.com/CopilotMe/fix-sense" },
+    "issues": { "uri": "https://github.com/CopilotMe/fixsense-action/issues" },
+    "support": { "uri": "https://fix-sense.vercel.app/docs" }
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/CopilotMe/fix-sense"
+  },
+  "contributions": [
+    {
+      "id": "fixsense-analyze-task",
+      "type": "ms.vss-distributed-task.task",
+      "targets": ["ms.vss-distributed-task.tasks"],
+      "properties": {
+        "name": "tasks/fixsense-analyze"
+      }
+    }
+  ],
+  "files": [
+    { "path": "tasks/fixsense-analyze" }
+  ]
+}

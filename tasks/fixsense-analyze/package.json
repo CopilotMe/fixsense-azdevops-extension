@@ -1,0 +1,16 @@
+{
+  "name": "fixsense-analyze-task",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "azure-pipelines-task-lib": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/q": "^1.5.8",
+    "typescript": "^5.5.0"
+  }
+}

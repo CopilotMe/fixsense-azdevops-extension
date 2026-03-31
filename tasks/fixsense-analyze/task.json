@@ -1,0 +1,43 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+  "id": "c7f3a2e1-8d94-4b6f-a051-3e9c72b84d5f",
+  "name": "FixSenseAnalyze",
+  "friendlyName": "FixSense — AI Test Analysis",
+  "description": "Send test results to FixSense for AI-powered root cause analysis and auto-fix suggestions",
+  "helpMarkDown": "[Learn more](https://fix-sense.vercel.app/docs/integrations/azure-devops)",
+  "category": "Test",
+  "visibility": ["Build", "Release"],
+  "author": "FixSense",
+  "version": { "Major": 0, "Minor": 1, "Patch": 0 },
+  "instanceNameFormat": "FixSense Analysis",
+  "inputs": [
+    {
+      "name": "apiKey",
+      "type": "string",
+      "label": "FixSense API Key",
+      "required": true,
+      "helpMarkDown": "Your FixSense API key. Get it from [dashboard settings](https://fix-sense.vercel.app/dashboard/settings)."
+    },
+    {
+      "name": "resultsPath",
+      "type": "string",
+      "label": "Test Results Path",
+      "defaultValue": "**/*.trx",
+      "required": false,
+      "helpMarkDown": "Glob pattern for test result files (TRX, JUnit XML). Default: `**/*.trx`"
+    },
+    {
+      "name": "apiUrl",
+      "type": "string",
+      "label": "API URL",
+      "defaultValue": "https://fix-sense.vercel.app/api/v1/analyze",
+      "required": false,
+      "helpMarkDown": "FixSense API endpoint (only change for self-hosted)"
+    }
+  ],
+  "execution": {
+    "Node16": {
+      "target": "dist/index.js"
+    }
+  }
+}
