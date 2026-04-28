@@ -8,7 +8,7 @@ async function run() {
     const resultsPath = tl.getInput("resultsPath", false) || "**/*.trx";
     const apiUrl =
       tl.getInput("apiUrl", false) ||
-      "https://fix-sense.vercel.app/api/v1/analyze";
+      "https://fix-sense.com/api/v1/analyze";
 
     // Find test result files
     const resultFiles = tl.findMatch(

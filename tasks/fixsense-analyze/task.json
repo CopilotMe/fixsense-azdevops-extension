@@ -4,7 +4,7 @@
   "name": "FixSenseAnalyze",
   "friendlyName": "FixSense — AI Test Analysis",
   "description": "Send test results to FixSense for AI-powered root cause analysis and auto-fix suggestions",
-  "helpMarkDown": "[Learn more](https://fix-sense.vercel.app/docs/integrations/azure-devops)",
+  "helpMarkDown": "[Learn more](https://fix-sense.com/docs/integrations/azure-devops)",
   "category": "Test",
   "visibility": ["Build", "Release"],
   "author": "FixSense",
@@ -16,7 +16,7 @@
       "type": "string",
       "label": "FixSense API Key",
       "required": true,
-      "helpMarkDown": "Your FixSense API key. Get it from [dashboard settings](https://fix-sense.vercel.app/dashboard/settings)."
+      "helpMarkDown": "Your FixSense API key. Get it from [dashboard settings](https://fix-sense.com/dashboard/settings)."
     },
     {
       "name": "resultsPath",
@@ -30,13 +30,13 @@
       "name": "apiUrl",
       "type": "string",
       "label": "API URL",
-      "defaultValue": "https://fix-sense.vercel.app/api/v1/analyze",
+      "defaultValue": "https://fix-sense.com/api/v1/analyze",
       "required": false,
       "helpMarkDown": "FixSense API endpoint (only change for self-hosted)"
     }
   ],
   "execution": {
-    "Node16": {
+    "Node20": {
       "target": "dist/index.js"
     }
   }

@@ -6,8 +6,8 @@ See [overview.md](overview.md) for the full Marketplace listing description and 
 
 ## Documentation
 
-- [Integration guide](https://fix-sense.vercel.app/docs/integrations/azure-devops)
-- [Dashboard](https://fix-sense.vercel.app/dashboard)
+- [Integration guide](https://fix-sense.com/docs/integrations/azure-devops)
+- [Dashboard](https://fix-sense.com/dashboard)
 
 ## Development
 

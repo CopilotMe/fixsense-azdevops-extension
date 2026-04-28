@@ -19,7 +19,7 @@ Works with any framework that produces **TRX** or **JUnit XML** reports:
 
 ## Quick Setup
 
-1. Get your API key from [FixSense Dashboard](https://fix-sense.vercel.app/dashboard/settings)
+1. Get your API key from [FixSense Dashboard](https://fix-sense.com/dashboard/settings)
 2. Store it as a pipeline secret variable: `FIXSENSE_API_KEY`
 3. Add the task to your pipeline after your test step:
 
@@ -32,7 +32,7 @@ steps:
       resultsPath: '**/*.trx'
 ```
 
-4. View results on your [FixSense Dashboard](https://fix-sense.vercel.app/dashboard)
+4. View results on your [FixSense Dashboard](https://fix-sense.com/dashboard)
 
 ## Full Pipeline Example (.NET)
 
@@ -90,7 +90,7 @@ steps:
 
 ## Links
 
-- [Documentation](https://fix-sense.vercel.app/docs/integrations/azure-devops)
-- [Dashboard](https://fix-sense.vercel.app/dashboard)
+- [Documentation](https://fix-sense.com/docs/integrations/azure-devops)
+- [Dashboard](https://fix-sense.com/dashboard)
 - [GitHub](https://github.com/CopilotMe/fixsense-azdevops-extension)
-- [Support](https://fix-sense.vercel.app/docs)
+- [Support](https://fix-sense.com/docs)
